@@ -1,6 +1,6 @@
-/*global window:true*/
+/*global window:true,module:true*/
 
-(function (undefined) {
+(function () {
     "use strict";
 
     var StringUtils = function () {};
@@ -26,7 +26,17 @@
             regex = new RegExp(pattern, "gi");
             formattedString = formattedString.replace(regex, arguments[i]);
         }
-        //TODO: throw exception if not enough arguments provided, based on format string
+        pattern = "(^|[^{])\\{[0-9]+\\}($|[^}])";
+        regex = new RegExp(pattern, "gi");
+        if (regex.test(formattedString)) {
+            throw "Index (zero based) must be greater than or equal to zero and less than the size of the argument list.";
+        }
+
+        pattern = "(^|[^{])\\{[^}]*\\}($|[^}])";
+        regex = new RegExp(pattern, "gi");
+        if (regex.test(formattedString)) {
+            throw "Input string was not in a correct format.";
+        }
         pattern = "\\{{2}";
         regex = new RegExp(pattern, "gi");
         formattedString = formattedString.replace(regex, "{");
