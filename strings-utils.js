@@ -24,7 +24,7 @@
         for (i = 1; i < arguments.length; i += 1) {
             pattern = "(^|[^{])\\{" + (i - 1).toString() + "\\}($|[^}])";
             regex = new RegExp(pattern, "gi");
-            formattedString = formattedString.replace(regex, arguments[i]);
+            formattedString = formattedString.replace(regex, "$1" + arguments[i] + "$2");
         }
         pattern = "(^|[^{])\\{[0-9]+\\}($|[^}])";
         regex = new RegExp(pattern, "gi");
