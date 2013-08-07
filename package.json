@@ -1,0 +1,17 @@
+{
+  "name": "string-utils",
+  "description": "Utitilies for formatting and manipulating strings",
+  "version": "1.0",
+  "keywords": [
+    "string",
+    "javascript",
+    "format"
+  ],
+  "licenses": [
+    {
+      "name": "The MIT License (MIT)",
+      "url": "https://github.com/Mindwalker2076/string-utils/blob/master/LICENSE"
+    }
+  ]
+}
+
