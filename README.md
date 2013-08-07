@@ -30,9 +30,11 @@ Copy string-utils.js to your scripts folder. If your scripts folder *js* is one 
     window.alert(StringUtils.format('Hello, {0}', 'World'));
     </script>
 
-**For server-side (NOde.js) use:**
+**For server-side (Node.js) use:**
 
+```
 npm install git+https://github.com/Mindwalker2076/string-utils
+```
 
 ## API Reference
 
