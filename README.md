@@ -38,7 +38,9 @@ npm install git+https://github.com/Mindwalker2076/string-utils
 
 ## API Reference
 
-Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.
+StringUtils.format(formatString, arg0, arg1, ..., argn)
+
+Formats a string substituting value of arg0 for {0}, arg1 for {1}, etc.
 
 ## Tests
 
