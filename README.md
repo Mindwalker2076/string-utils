@@ -17,7 +17,7 @@ s2 = StringUtils.format("{0}: Getting ready to publish", new Date());
 
 ## Motivation
 
-Author needed Javascrpt functionality similar to the String.Format() function found in .Net.
+Author needed Javascript functionality similar to the String.Format() function found in .Net.
 
 ## Installation
 
